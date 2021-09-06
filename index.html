@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FA-Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <script src="https://kit.fontawesome.com/0dba35f37d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1><a class="ex1">Hi!</a></h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='/images/1 photo.jpg'/>
+        
+
+        <div class='herosectionDetails'>
+          <h1 class='ex2'>I'm Farhan Ashraf</h1>
+          <h3 class='ex3'>Fornt-End Web Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1 class='ex4'>What I Do...</h1>
+        <p>I'm a Front-End Developer located in India. I have a passion for 
+           creating beautiful web pages, animation and UI effects.
+           I am well-organised person and problem solver. Fan of tech, drawing, travelling,
+           gaming and TV series.
+        </p>   
+        <br>
+        <p>Interested in the entire full stack web development and working on ambitious projects with
+           positive people.
+        </p>
+
+        <p>   <a class='meet' href="#contactForm">Lets make something.</a>
+
+        </p>
+      </section>
+
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading1'>Skills</h1>
+          <img title='HTML' src='./images/3 c.svg'>
+          <img title='HTML' src='./images/4 html.svg'>
+          <img title='CSS' src='./images/5 css.svg'>
+          <img title='Javascript' src='./images/6 js.svg'>
+          <img title='React' src='./images/7 reactjs.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading2'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./images/8 project pic.svg'/>
+            <div class='projectDescription'>
+              <h4><a class='ex5' href="https://farhanashraf65.github.io/TheSparksFoundation_gripjune21-task/">WeCare</a></h4>
+              <p>A donation page for elderly people.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+        
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mr-farhan-ashraf"><i class="fab fa-linkedin-in"></a></i>
+                <a href="https://github.com/farhanashraf65"><i class="fab fa-github"></a></i>
+                <a href="https://medium.com/@mr.farhan"><i class="fab fa-medium-m"></i></a>
+            </div>  
+
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
